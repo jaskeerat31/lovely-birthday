@@ -1,68 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Happy Birthday Lovely ❤️</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="hearts"></div>
-
-<section class="hero">
-<h1>Happy Birthday, Lovely ❤️</h1>
-<p class="tag">Every love story is beautiful... ours is my favorite.</p>
-<p>From <b>Jaskeerat</b> • 10 July</p>
-<a href="#journey" class="btn">Begin Our Story ✨</a>
+<!doctype html><html><head><meta charset='utf-8'><meta name=viewport content='width=device-width,initial-scale=1'>
+<link rel="stylesheet" href="styles.css"></head><body>
+<canvas id=stars></canvas><div id=hearts></div>
+<section class=intro><h1 id=type></h1></section>
+<section class='glass hero'><h2>Happy Birthday, Lovely ❤️</h2><p>You are my favorite chapter.</p></section>
+<section class='glass'><h2>Our Journey</h2><div class=timeline>
+<div>💫 We met</div><div>😂 We laughed</div><div>💋 We kissed</div><div>📸 We created memories</div><div>💍 Next Chapter: Forever</div></div></section>
+<section class='glass'><h2>Unlock Our Love</h2>
+<div id=cards></div></section>
+<section class='glass'><h2>Gallery</h2><div class=gallery>
+<img src='assets/photo1.jpeg' onclick='openImg(this.src)'><img src='assets/photo2.jpeg' onclick='openImg(this.src)'><img src='assets/photo3.jpeg' onclick='openImg(this.src)'><img src='assets/photo4.jpeg' onclick='openImg(this.src)'><img src='assets/photo5.jpeg' onclick='openImg(this.src)'><img src='assets/photo6.jpeg' onclick='openImg(this.src)'><img src='assets/photo7.jpeg' onclick='openImg(this.src)'><img src='assets/photo8.jpeg' onclick='openImg(this.src)'><img src='assets/photo9.jpeg' onclick='openImg(this.src)'><img src='assets/photo10.jpeg' onclick='openImg(this.src)'>
+</div></section>
+<section class='glass'><h2>Secret Love Letters</h2>
+<details><summary>Open Letter 1</summary><p>Every day with you feels like home.</p></details>
+<details><summary>Open Letter 2</summary><p>Thank you for choosing us.</p></details>
 </section>
-
-<section id="journey">
-<h2>Our Journey</h2>
-<div class="timeline">
-<div>💖 We met.</div>
-<div>😊 We laughed.</div>
-<div>🌍 We created memories.</div>
-<div>💍 Next chapter: Forever.</div>
-</div>
-</section>
-
-<section>
-<h2>Reasons I Love You</h2>
-<div class="cards"></div>
-</section>
-
-<section>
-<h2>Secret Letter 💌</h2>
-<button class="btn" onclick="toggleLetter()">Unlock</button>
-<div id="letter" class="letter hidden">
-<p>Dear Lovely,</p>
-<p>You have become my peace, my happiness, and my safest place. I never imagined someone could make ordinary days feel extraordinary simply by being there.</p>
-<p>I love your smile, your kindness, your heart, and even the little things that make you uniquely you.</p>
-<p>Very soon you'll become my wife, and I honestly cannot wait to build a lifetime filled with adventures, laughter, silly arguments, endless hugs, late-night conversations, and dreams that belong to both of us.</p>
-<p>If I had the chance to choose again, I'd still choose you. Every single time.</p>
-<p>Happy Birthday, my beautiful Lovely.</p>
-<p><b>Forever yours,<br>Jaskeerat ❤️</b></p>
-</div>
-</section>
-
-<section>
-<h2>Click the Gift 🎁</h2>
-<div id="gift">🎁</div>
-<p id="giftmsg"></p>
-</section>
-
-<section>
-<h2>Future Bucket List</h2>
-<ul>
-<li>✈️ Travel the world together</li>
-<li>🏡 Build our dream home</li>
-<li>☕ Morning chai together forever</li>
-<li>🎂 Celebrate 100 birthdays together</li>
-<li>👵 Grow old while still flirting with each other</li>
-</ul>
-</section>
-
-<footer>Made with infinite ❤️ by Jaskeerat</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<section class='glass'><h2>Gift</h2><button onclick='gift()'>🎁 Open Gift</button><p id=gift></p></section>
+<section class='glass final'><h2>Thank you for saying yes to forever. ❤️</h2><button onclick='fireworks()'>Final Surprise</button><canvas id=fw></canvas></section>
+<div id=lightbox onclick='this.style.display="none"'><img id=lb></div>
+<script src='script.js'></script></body></html>

@@ -1,33 +1,7 @@
-
-const reasons=[
-["Your Smile","It can fix my worst day."],
-["Your Heart","You're kind in ways words can't explain."],
-["Your Support","You make me believe in myself."],
-["Our Future","Every dream is better because you're in it."],
-["Your Laugh","My favorite sound."],
-["Forever","I'd choose you in every lifetime."]
-];
-const cards=document.querySelector(".cards");
-reasons.forEach(r=>{
- let d=document.createElement("div");
- d.className="card";
- d.innerHTML="<h3>"+r[0]+"</h3><p style='display:none'>"+r[1]+"</p>";
- d.onclick=()=>{let p=d.querySelector("p");p.style.display=p.style.display==="block"?"block":"block";}
- cards.appendChild(d);
-});
-function toggleLetter(){document.getElementById("letter").classList.toggle("hidden");}
-gift.onclick=()=>{
- gift.innerHTML="💖";
- giftmsg.innerHTML="Surprise! My biggest gift is getting to spend forever with you. Happy Birthday, Lovely! ❤️";
- for(let i=0;i<120;i++)spawn();
-}
-function spawn(){
- let h=document.createElement("div");
- h.className="heart";
- h.innerHTML=Math.random()>0.5?"❤️":"💕";
- h.style.left=Math.random()*100+"vw";
- h.style.animationDuration=(3+Math.random()*4)+"s";
- document.body.appendChild(h);
- setTimeout(()=>h.remove(),7000);
-}
-setInterval(()=>{if(document.querySelectorAll('.heart').length<25)spawn()},500);
+const txt='To my beautiful fiancée Lovely... Happy Birthday ❤️';let i=0;setInterval(()=>{if(i<txt.length)type.textContent+=txt[i++]},70);
+for(let k=0;k<25;k++){let h=document.createElement('div');h.innerHTML='❤️';h.style.cssText=`position:absolute;left:${Math.random()*100}%;top:${Math.random()*100}%;opacity:.4;animation:float ${5+Math.random()*5}s infinite`;hearts.appendChild(h)}
+const c=['You make every day brighter.','Forever starts with you.','My safest place is with you.','Every memory is priceless.','To infinity & beyond.'];let idx=0;function add(){if(idx<c.length){let d=document.createElement('div');d.textContent=c[idx++];cards.appendChild(d);setTimeout(add,700)}}add();
+function openImg(s){lightbox.style.display='flex';lb.src=s}
+function gift(){gift.innerHTML='💍 My greatest gift is our forever.'}
+const star=document.getElementById('stars'),ctx=star.getContext('2d');function rs(){star.width=innerWidth;star.height=innerHeight}rs();onresize=rs;let pts=[...Array(180)].map(()=>({x:Math.random()*star.width,y:Math.random()*star.height,r:Math.random()*2}));(function a(){ctx.clearRect(0,0,star.width,star.height);ctx.fillStyle='white';pts.forEach(p=>{ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.fill();});requestAnimationFrame(a)})();
+function fireworks(){let f=document.getElementById('fw'),x=f.getContext('2d');f.width=f.clientWidth;f.height=250;let p=[...Array(120)].map(()=>({x:f.width/2,y:125,vx:(Math.random()-.5)*8,vy:(Math.random()-.5)*8}));let t=0;(function an(){x.fillStyle='rgba(0,0,0,.2)';x.fillRect(0,0,f.width,f.height);p.forEach(o=>{o.x+=o.vx;o.y+=o.vy;o.vy+=.03;x.fillStyle=`hsl(${Math.random()*360},100%,60%)`;x.fillRect(o.x,o.y,3,3)});if(t++<90)requestAnimationFrame(an)})()}
