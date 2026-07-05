@@ -1,0 +1,20 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial;background:linear-gradient(135deg,#1e0b3b,#ff4f9a);color:white;text-align:center;overflow-x:hidden}
+section{padding:70px 20px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+h1{font-size:3.6rem;margin:0}
+.tag{font-size:1.3rem}
+.btn{display:inline-block;margin-top:20px;padding:14px 28px;border-radius:30px;background:#fff;color:#d81b60;text-decoration:none;font-weight:bold}
+.timeline{display:grid;gap:15px;max-width:700px;margin:auto}
+.timeline div,.card,.letter,#gift{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border-radius:18px;padding:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1100px;margin:auto}
+.card{cursor:pointer;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.hidden{display:none}
+#gift{font-size:90px;cursor:pointer;display:inline-block}
+ul{list-style:none;padding:0;max-width:600px;margin:auto}
+li{padding:10px}
+.heart{position:fixed;top:-20px;font-size:20px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh);opacity:0}}
+footer{padding:30px}
